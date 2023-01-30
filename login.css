@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+html, body, .wrapper{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url(bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Ubuntu";
+    color: black;
+    animation: rotate 6s infinite alternate linear;
+}
+
+.login-card{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    background: white;
+    text-align: center;
+}
+.login-card > h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: -78px 0px 27px;
+
+
+}.login-card > h3{
+    color:  black;
+    margin: 0 0 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.login-form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+.login-form > input, .login-form >button{
+    width: 100%;
+    height: 50px;
+
+}
+.login-form >input{
+    border: 2px solid rgb(203, 185, 185);
+    font-family: inherit;
+    font-size: 15px;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    transition: all 0.375s;
+    
+}
+.login-form >input:hover{
+  border: 2px solid rgb(169, 169, 185);
+
+}
+.login-form >button{
+    cursor: pointer;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    background: rgb(43, 98, 216);
+    color: white;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+}
+.login-form >button:hover{
+    background: rgb(20, 20, 188);
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+}
+.login-form>a{
+    color: blue;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: all 0.375s;
+}
+
+.login-form>a:hover{
+    color: red;
+}
+
+@keyframes rotate{
+    100%{
+    background-position:15% 50%;
+    }
+}
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+    .login-card{
+        margin: 0;
+        width: 400px;
+    }
+}
+.sign{
+   text-decoration: underline;
+   color: white;
+}
+.sign:hover{
+    border-radius: 4px;
+     color: rgb(0, 0, 0);
+    
+}
